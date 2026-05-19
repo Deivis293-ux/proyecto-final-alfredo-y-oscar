@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto PEC</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        transition: background 0.4s, color 0.4s;
+        background: white;
+        color: black;
+    }
+
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px;
+        background:#0077cc;
+        color:white;
+    }
+
+    h1{
+        margin:0;
+        font-size:24px;
+    }
+
+    button{
+        padding:10px 15px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        background:white;
+        color:#0077cc;
+        font-weight:bold;
+    }
+
+    /* Modo oscuro */
+    .dark-mode{
+        background:#121212;
+        color:white;
+    }
+
+    .dark-mode header{
+        background:#1e1e1e;
+    }
+
+    .dark-mode button{
+        background:#333;
+        color:white;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Proyecto del PEC Oscar y Alfredo</h1>
+    <button onclick="cambiarModo()">🌙 Modo Oscuro</button>
+</header>
+
+<script>
+function cambiarModo() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
