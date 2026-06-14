@@ -1,59 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyecto PEC</title>
-
-<style>
-    body{
-        margin:0;
-        font-family: Arial, sans-serif;
-        transition: background 0.4s, color 0.4s;
-        background: white;
-        color: rgb(0, 0, 0);
-    }
-
-    header{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:20px;
-        background:#0077cc;
-        color:white;
-    }
-
-    h1{
-        margin:0;
-        font-size:24px;
-    }
-
-    button{
-        padding:10px 15px;
-        border:none;
-        border-radius:8px;
-        cursor:pointer;
-        background:white;
-        color:#0077cc;
-        font-weight:bold;
-    }
-
-    /* Modo oscuro */
-    .dark-mode{
-        background:#121212;
-        color:white;
-    }
-
-    .dark-mode header{
-        background:#1e1e1e;
-    }
-
-    .dark-mode button{
-        background:#333;
-        color:white;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Mi página con navegador</title>
+    <!-- Vinculamos el archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
@@ -62,11 +15,42 @@
     <button onclick="cambiarModo()">🌙 Modo Oscuro</button>
 </header>
 
-<script>
-function cambiarModo() {
-    document.body.classList.toggle("dark-mode");
-}
-</script>
+<section id="mision-vision">
+    <h2>CECyTE EMSaD 35</h2>
+
+    <div class="cuadro">
+        <h3>Misión</h3>
+        <p>
+            Ofrecer a los estudiantes educación media superior de calidad, brindando
+            aprendizajes que les permitan continuar con sus estudios de nivel superior
+            y desarrollarse en su vida profesional, contribuyendo al progreso de su comunidad.
+        </p>
+    </div>
+
+    <div class="cuadro">
+        <h3>Visión</h3>
+        <p>
+            Ser una institución reconocida por su excelencia académica y humana,
+            formando jóvenes con valores, competencias y sentido social, capaces de
+            transformar positivamente su entorno.
+        </p>
+    </div>
+</section>
+
+
+
+<section id="beneficios">
+    <h2>Beneficios del EMSaD 35</h2>
+    <ul>
+        <li>Educación media superior accesible en la comunidad.</li>
+        <li>Docentes capacitados y comprometidos con la formación integral.</li>
+        <li>Programas de apoyo académico y orientación vocacional.</li>
+        <li>Actividades culturales, deportivas y de integración social.</li>
+        <li>Preparación para continuar estudios universitarios.</li>
+        <li>Formación en valores y competencias para la vida.</li>
+    </ul>
+</section>
+
 
 </body>
 </html>
